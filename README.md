@@ -1,4 +1,4 @@
-# Evaluation of Data Analytics Course Sessions - MiniCapstone Project
+### Evaluation of Data Analytics Course Sessions - MiniCapstone Project
 - Its a Mini Capstone Project to Analyse the Data Analytics Classes.
 - Classes commenced on 16th October and ended on 15 Feb so took the insights and visualized the data using different tools such as:<br/> 
   - **MySql**<br/> 
