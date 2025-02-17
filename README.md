@@ -61,11 +61,11 @@
 
         ![DaClass_Analysis](https://github.com/user-attachments/assets/77d408b9-c593-4307-943f-6889da8f0ba9)
 
-      - **Python(Pandas and Matplotlib in JupyterNotebook)**:
+    - **Python(Pandas and Matplotlib in JupyterNotebook)**:
         -  using pandas imported the various sheets of excel and used merge functions and showed the results.
         -  using matplotlib implemented few graphs.
 
 - To Conclude, The Data Analytics Class Analysis has been implemented across various applications viz MySQL, Python, and Power BI.
-- I would like to say thank you to my friend Sunitha 🙏 for being a great source of inspiration. 
+- Finally, I would like to say thank you to my friend Sunitha 🙏 for being a great source of inspiration. 
 
       
