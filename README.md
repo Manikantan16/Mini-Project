@@ -14,19 +14,58 @@
  - **MYSQL**:
       - Created an excel file with 6 sheets and converted it to csv and imported the csv data to Mysql table and wrote query for the displaying the results
       - Log in to Mysql Workbench and Select the Desired Database
-      - Expand and go to tables
+      - In the Navigator panel on the left, locate your database and the table into which you want to import the data.
       - Right click tables and select **Table Data Import Wizard**
-        
+   
         ![image](https://github.com/user-attachments/assets/1f53b8be-e2c3-4c47-8cd2-25a8082efaa3)
+
+      - Choose Your Excel (or CSV) File
+      - In the Import Wizard, a window will pop up asking you to select the file you want to import
+
+        ![image](https://github.com/user-attachments/assets/a19a0e10-d985-4f02-9c25-8c4ba4176962)
+
+      - Select your Excel file (saved as .csv format) and click Open
+      - In the Import Wizard, a window will pop up asking you to select the file you want to import
+      ![image](https://github.com/user-attachments/assets/3c6daced-4a8b-4990-aec2-dd43cda89e90)
+      - Map Columns (if needed)
+      - You can match the columns from the CSV to the columns in your MySQL table. Usually, it will auto-detect the columns, but you can manually adjust them if              needed
+      - Once you’ve set everything up, click Next and then Finish to start the import process.
+      - Once done you can check by executing the below query:<br/>
+        SELECT * FROM table_name;
+      - In my Case the selected queries are:<br/>
+        select * from nit.Da_classes<br/>
+        Select * from nit.Day_Type<br/>
+        Select distinct Day_Type from  nit.Da_classes<br/>
   
-       - Select the csv from your local drive by clicking browse and then click Next 
+        - Evaluate or Review the Classes held in October 2024. 
+        ![image](https://github.com/user-attachments/assets/4baad950-4a0f-4895-affe-01d2380662db)
 
-        ![Screenshot 2025-02-17 184630](https://github.com/user-attachments/assets/28664163-52ab-48c8-908a-6ac1b6df7e32)
+        - Review/Evaluate the Classes from Oct 16 2024 to 11 Feb 2025
+          
+        ![image](https://github.com/user-attachments/assets/dfe75bd4-0408-4e63-947b-aa76144b0256)
+
+        - Summarize the classes Based on No Days and Day Types
+
+        ![image](https://github.com/user-attachments/assets/78b29e61-7a72-4cf6-bd05-f7b85db0d382)
+
+        - For example, if we want to view the Class details from 01-Jan-2025 wards, we can use the stored procedure to filter the data accordingly.<br/>
+          CALL GetClassDetailsByParams('2025-01-01','','');
+          
+        ![image](https://github.com/user-attachments/assets/a37db78e-2b40-4356-8102-f5176e08effe)
+         
+    - **Power-BI**:
+      - Imported the csv file and created the insights using measures, cards etc
+      - Implemented the Demographics i.e Day Type distribution for the Entire class duration using Clustered Column Chart.
+      - Day Type Count by Month wise (Oct - Feb) using Stacked bar chart
+      - Breakup of days by Month for entire class using Donut Charts.
+
+        ![DaClass_Analysis](https://github.com/user-attachments/assets/77d408b9-c593-4307-943f-6889da8f0ba9)
+
+      - **Python(Pandas and Matplotlib in JupyterNotebook)**:
+        -  using pandas imported the various sheets of excel and used merge functions and showed the results.
+        -  using matplotlib implemented few graphs.
+
+- To Conclude, The Data Analytics Class Analysis has been implemented across various applications viz MySQL, Python, and Power BI.
 
 
-        ![image](https://github.com/user-attachments/assets/bf2331f0-380a-4881-8451-1872026bb205)
-
-
-
-        
-      - I've also created a Stored Procedure with parameters that accepts a from-date, to-date, and day-type to display the results  
+      
