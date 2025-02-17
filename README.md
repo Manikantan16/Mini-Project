@@ -66,6 +66,6 @@
         -  using matplotlib implemented few graphs.
 
 - To Conclude, The Data Analytics Class Analysis has been implemented across various applications viz MySQL, Python, and Power BI.
-
+- I would like to say thank you to my friend Sunitha 🙏 for being a great source of inspiration. 
 
       
